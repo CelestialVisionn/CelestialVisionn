@@ -20,7 +20,7 @@ export function HeroSection() {
         <img
           src={heroImage}
           alt="Ethereal forest ferns in soft morning light"
-          className="w-full h-full object-cover opacity-70"
+          className="w-full h-full object-cover opacity-50"
         />
       </div>
 
@@ -86,9 +86,9 @@ export function HeroSection() {
             Schedule Your Consultation
           </Button>
           <Button
-            variant="cream-outline"
+            variant="outline"
             size="lg"
-            className="text-tarot-terracotta/60 hover:text-tarot-terracotta transition-colors rounded-lg md:h-14 md:px-10 md:text-base"
+            className="text-tarot-terracotta/60 hover:text-white transition-colors rounded-lg md:h-14 md:px-10 md:text-base"
             onClick={() => scrollToSection('#about')}
           >
             Learn More

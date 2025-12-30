@@ -11,7 +11,7 @@ export function FooterSection() {
   const navigate = useNavigate();
 
   return (
-    <footer id="contact" className="bg-forest text-cream" ref={ref}>
+    <footer id="contact" className="bg-primary text-cream" ref={ref}>
       {/* CTA Section */}
       <div className="section-padding border-b border-cream/10">
         <motion.div
@@ -23,15 +23,15 @@ export function FooterSection() {
           <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl mb-6">
             Ready to Begin
             <br />
-            <span className="italic text-gold">Your Journey?</span>
+            <span className="italic text-tarot-terracotta">Your Journey?</span>
           </h2>
           <p className="text-cream/70 max-w-lg mx-auto mb-10 text-lg">
             Take the first step toward clarity and grounded insight. 
             Schedule your consultation today.
           </p>
           <Button
-            variant="sage"
-            size="lg"
+            variant="secondary"
+             size="lg"
             className="rounded-lg w-full sm:w-auto text-sm sm:text-base px-6 sm:px-8"
             onClick={() => navigate('/book')}
           >
