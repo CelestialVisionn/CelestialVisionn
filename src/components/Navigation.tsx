@@ -35,7 +35,7 @@ export function Navigation() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
-        className="hidden md:block fixed top-0 left-0 right-0 z-50"
+        className="hidden md:block fixed top-0 left-0 right-0 z-50 bg-transparent"
       >
         <div className="max-w-7xl mx-auto px-4 lg:px-8 xl:px-12">
           <div className="relative md:h-20 lg:h-24 xl:h-28 flex items-center justify-center">
@@ -43,7 +43,7 @@ export function Navigation() {
             <div
               className={`flex items-center md:gap-1 lg:gap-3 xl:gap-6 md:px-3 lg:px-6 xl:px-8 py-2 md:py-1.5 lg:py-2 rounded-full border shadow-soft transition-all duration-300 ${
                 isScrolled
-                  ? 'bg-cream/15 backdrop-blur-xl ring-1 ring-cream/20'
+                  ? 'bg-forest/70 backdrop-blur-xl border-cream/20'
                   : 'bg-forest/60 backdrop-blur-xl border-cream/20'
               }`}
             >
@@ -53,11 +53,7 @@ export function Navigation() {
                   <button
                     key={link.href}
                     onClick={() => scrollToSection(link.href)}
-                    className={`md:text-[0.6rem] lg:text-xs xl:text-sm font-body tracking-wide-premium uppercase transition-colors duration-300 relative group md:px-2 lg:px-3 xl:px-4 md:py-1 lg:py-1.5 xl:py-2 rounded-full whitespace-nowrap ${
-                      isScrolled
-                        ? 'text-forest/80 hover:text-forest hover:bg-forest/10'
-                        : 'text-cream/90 hover:text-cream hover:bg-cream/10'
-                    }`}
+                    className={`md:text-[0.6rem] lg:text-xs xl:text-sm font-body tracking-wide-premium uppercase transition-colors duration-300 relative group md:px-2 lg:px-3 xl:px-4 md:py-1 lg:py-1.5 xl:py-2 rounded-full whitespace-nowrap text-cream/90 hover:text-cream hover:bg-cream/10`}
                   >
                     {link.label}
                     <span className="absolute -bottom-0 left-0 w-0 h-px bg-gold/80 transition-all duration-300" />
@@ -65,11 +61,7 @@ export function Navigation() {
                 ))}
                 <button
                   onClick={() => scrollToSection('#contact')}
-                  className={`md:text-[0.6rem] lg:text-xs xl:text-sm font-body tracking-wide-premium uppercase transition-colors duration-300 relative group md:px-2 lg:px-3 xl:px-4 md:py-1 lg:py-1.5 xl:py-2 rounded-full whitespace-nowrap ${
-                    isScrolled
-                      ? 'text-forest/80 hover:text-forest hover:bg-forest/10'
-                      : 'text-cream/90 hover:text-cream hover:bg-cream/10'
-                  }`}
+                  className={`md:text-[0.6rem] lg:text-xs xl:text-sm font-body tracking-wide-premium uppercase transition-colors duration-300 relative group md:px-2 lg:px-3 xl:px-4 md:py-1 lg:py-1.5 xl:py-2 rounded-full whitespace-nowrap text-cream/90 hover:text-cream hover:bg-cream/10`}
                 >
                   Contact Us
                   <span className="absolute -bottom-0 left-0 w-0 h-px bg-gold/80 transition-all duration-300" />

@@ -90,7 +90,7 @@ export function FooterSection() {
                   <Linkedin size={18} />
                 </a>
               </div>
-              <a href="#" className="text-sm text-cream/50 hover:text-cream transition-colors">
+              <a href="/privacy" className="text-sm text-cream/50 hover:text-cream transition-colors">
                 Privacy Policy
               </a>
             </div>

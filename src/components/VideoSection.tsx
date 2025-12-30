@@ -5,16 +5,18 @@ import { Play } from 'lucide-react';
 
 const videos = [
   {
-    title: "This Week's Reading",
-    subtitle: "New Moon in Capricorn",
+    title: "Current feelings of your Person",
+    subtitle: "Healing Through Clarity",
     date: "January 2025",
-    description: "Join our weekly reflection on the current lunar cycle and how it influences your personal and professional journey. This week we explore themes of manifestation and strategic planning.",
+    description: "This collective tarot reading explores emotional confusion, third-party influence, and relationship healing. Discover how patience, communication, and time can restore harmony.",
+    youtubeId: "PsSGzg57Rro",
   },
   {
-    title: "Crystal Healing Basics",
-    subtitle: "Understanding Your Stones",
+    title: "What is going to happen in your career",
+    subtitle: "The obstacles",
     date: "Energy Series",
-    description: "Learn the fundamentals of crystal selection and placement. Discover how different minerals can support your workspace energy and enhance your daily intentions.",
+    description: "Career guidance reading about growth opportunities, obstacles, delays, and the actions needed to move forward with clarity, confidence, and long-term professional growth.",
+    youtubeId: "vhnquP5xP1A",
   },
 ];
 
@@ -54,43 +56,27 @@ export function VideoSection() {
               className="relative"
             >
               {/* Video Player */}
-              <div className="relative aspect-video rounded-xl overflow-hidden bg-forest group cursor-pointer mb-4">
-                {/* Placeholder Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-forest via-forest/90 to-sage/30" />
-                
-                {/* Decorative elements */}
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full border border-sage/50 animate-pulse" />
-                  <div className="absolute bottom-1/3 right-1/3 w-48 h-48 rounded-full border border-gold/30" />
-                </div>
-
-                {/* Play Button */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-cream/10 backdrop-blur-sm border border-cream/20 flex items-center justify-center group-hover:bg-cream/20 group-hover:scale-110 transition-all duration-300">
-                    <Play size={32} className="text-cream ml-1" fill="currentColor" />
-                  </div>
-                </div>
-
-                {/* Title Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-forest/80 to-transparent">
-                  <h3 className="font-heading text-xl md:text-2xl text-cream mb-1">
-                    {video.title}
-                  </h3>
-                  <p className="text-cream/70 text-sm">
-                    {video.subtitle} · {video.date}
-                  </p>
-                </div>
+              <div className="relative aspect-video rounded-xl overflow-hidden bg-forest mb-4">
+                <iframe
+                  src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                  title={video.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
               </div>
 
               {/* Description */}
               <div className="space-y-3">
+                <h3 className="font-heading text-xl text-forest">
+                  {video.title}
+                </h3>
+                <p className="text-sm text-sage">
+                  {video.subtitle} · {video.date}
+                </p>
                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
                   {video.description}
                 </p>
-                <button className="inline-flex items-center gap-2 text-forest font-heading text-sm uppercase tracking-wide-premium hover:text-gold transition-colors duration-300">
-                  Watch Full Video
-                  <span>→</span>
-                </button>
               </div>
             </motion.div>
           ))}
