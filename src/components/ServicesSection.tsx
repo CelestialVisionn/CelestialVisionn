@@ -14,7 +14,6 @@ const services = [
     features: ['Strategic Career Guidance', 'Transition Navigation', 'Personal Growth Focus'],
     duration: '60 min',
     price: '₹ 900',
-    image: '/tarotcard.png',
   },
   {
     icon: Gem,
@@ -24,7 +23,6 @@ const services = [
     features: ['Custom Stone Selection', 'Workspace Design', 'Home Harmonization'],
     duration: '90 min',
     price: '₹ 1200',
-    image: '/crystalcard.png',
   },
 ];
 
@@ -67,11 +65,7 @@ export function ServicesSection() {
             >
               {/* Tarot Card Image */}
               <div className="absolute top-0 right-0 md:-top-6 md:-right-6 w-24 h-36 md:w-48 md:h-64 opacity-30 md:opacity-40 group-hover:opacity-60 transition-opacity duration-300">
-                <img 
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-contain"
-                />
+                
               </div>
 
               {/* Icon */}

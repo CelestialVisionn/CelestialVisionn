@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { Mail, Instagram, Linkedin, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useNavigate, Link } from 'react-router-dom';
+import footerBG from '/footerBG.png';
 
 export function FooterSection() {
   const ref = useRef(null);
@@ -11,8 +12,15 @@ export function FooterSection() {
   const navigate = useNavigate();
 
   return (
-    <footer id="contact" className="bg-primary text-cream" ref={ref}>
+    <footer id="contact" className="bg-primary text-cream relative overflow-hidden" ref={ref}>
+      {/* Background Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-50 pointer-events-none"
+        style={{ backgroundImage: `url(${footerBG})` }}
+      />
+
       {/* CTA Section */}
+      <div className="relative z-10">
       <div className="section-padding border-b border-cream/10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -115,6 +123,7 @@ export function FooterSection() {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </footer>
   );
