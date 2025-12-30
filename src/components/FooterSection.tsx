@@ -3,7 +3,7 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Mail, Instagram, Linkedin, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export function FooterSection() {
   const ref = useRef(null);
@@ -90,10 +90,19 @@ export function FooterSection() {
                   <Linkedin size={18} />
                 </a>
               </div>
-              <a href="/privacy" className="text-sm text-cream/50 hover:text-cream transition-colors">
-                Privacy Policy
-              </a>
+               <div className="flex flex-col gap-2">
+                <Link to="/privacy" className="text-sm text-cream/50 hover:text-cream transition-colors">
+                  Privacy Policy
+                </Link>
+                <Link to="/TermsConditions" className="text-sm text-cream/50 hover:text-cream transition-colors">
+                  Terms & Conditions
+                </Link>
+                <Link to="/RefundPolicy" className="text-sm text-cream/50 hover:text-cream transition-colors">
+                  Refund Policy
+                </Link>
+              </div>
             </div>
+            
           </div>
 
           {/* Bottom Bar */}
