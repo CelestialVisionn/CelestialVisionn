@@ -67,11 +67,11 @@ export function FooterSection() {
                 Contact
               </h4>
               <a
-                href="mailto:hello@verdantoracle.com"
+                href="mailto:celestialvisionwithmansi@gmail.com"
                 className="flex items-center gap-2 text-cream hover:text-gold transition-colors group"
               >
                 <Mail size={16} />
-                celestialvision2025@gmail.com
+                celestialvisionwithmansi@gmail.com
               </a>
               <a
                 href="tel:+918743907967"

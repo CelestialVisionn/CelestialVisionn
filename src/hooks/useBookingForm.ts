@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { formatDateForEmail, formatServicesList } from '@/components/BookingEmailHandler';
+import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formatDateForEmail, formatServicesList } from '@/components/BookingEmailHandler';
 import emailjs from '@emailjs/browser';
 
 type SelectedService = {
@@ -88,7 +88,8 @@ export function useBookingForm(initialServices: SelectedService[] = []) {
 
         console.log("EMAIL PAYLOAD =>", payload);
 
-        const response = await emailjs.send('service_5qeghob', 'template_w1xtx1h', payload);
+        // Use the same EmailJS IDs as configured in BookingEmailHandler to keep accounts in sync
+        const response = await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, payload);
 
         if (response.status === 200) {
           setSubmissionMessage({

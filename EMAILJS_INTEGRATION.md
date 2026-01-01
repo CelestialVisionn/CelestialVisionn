@@ -50,9 +50,9 @@ npm install @emailjs/browser
 5. All booking data is collected into a single object
 6. `sendBookingEmail()` is called with the booking data
 7. EmailJS sends the email using your credentials:
-   - **Service ID**: service_5qeghob
-   - **Template ID**: template_w1xtx1h
-   - **Public Key**: SrKYaekqwMia2xuI-
+   - **Service ID**: service_ly163it
+   - **Template ID**: template_17r5emv
+   - **Public Key**: n4bB-OhMca5F5s5zf
 8. Success message displays: "Booking confirmed! We will contact you shortly."
 9. Form resets automatically after 2 seconds
 10. On error, friendly message is shown to user

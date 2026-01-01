@@ -92,7 +92,7 @@ const PrivacyPolicy = () => {
                   You may browse the website without revealing personal identity. However, some features such as consultations, bookings, newsletters, or contact forms require personal information. If you choose not to provide certain details, some services may not be accessible.
                 </p>
                 <p className="italic text-sm text-muted-foreground">
-                  For any clarification regarding required information, you may contact us at <strong>celestialvision2025@gmail.com</strong>
+                  For any clarification regarding required information, you may contact us at <strong>celestialvisionwithmansi@gmail.com</strong>
                 </p>
               </section>
 
@@ -147,7 +147,7 @@ const PrivacyPolicy = () => {
                   <p className="font-medium text-foreground">Mansi Saxena</p>
                   <p className="font-medium text-foreground">Celestial Visionn</p>
                   <p className="text-foreground">
-                  <strong>celestialvision2025@gmail.com</strong>
+                  <strong>celestialvisionwithmansi@gmail.com</strong>
                   </p>
                 </div>
               </section>

@@ -111,7 +111,7 @@ const TermsConditions = () => {
                   If you have any questions regarding these Terms and Conditions, you may contact us at:
                 </p>
                 <p className="text-foreground font-medium">
-                  celestialvision2025@gmail.com
+                  celestialvisionwithmansi@gmail.com
                 </p>
               </section>
             </div>

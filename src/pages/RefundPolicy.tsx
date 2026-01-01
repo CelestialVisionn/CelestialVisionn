@@ -55,7 +55,7 @@ const RefundPolicy = () => {
                 </p>
                 <div className="space-y-2">
                   <p className="text-foreground font-medium">
-                    celestialvision2025@gmail.com
+                    celestialvisionwithmansi@gmail.com
                   </p>
                   <p className="text-foreground font-medium">
                     WhatsApp: +91 8743907967
