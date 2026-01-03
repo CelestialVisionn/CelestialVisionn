@@ -29,8 +29,8 @@ export const formatDateForEmail = (date: Date): string => {
  */
 export const formatServicesList = (services: Array<{ title: string; price: number }>) => {
   return services.map((service) => ({
-    name: service.title,
-    price: service.price
+    service_name: service.title,
+    service_price: service.price
   }));
 };
 
